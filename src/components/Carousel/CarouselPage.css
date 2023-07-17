@@ -1,0 +1,17 @@
+.carousel-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding-top: 100px;
+  }
+  
+  .carousel-container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .legend {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  

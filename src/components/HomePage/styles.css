@@ -4,6 +4,12 @@
   background-image: url('https://cms-ffxravi.blockstall.com/cover.jpg');
   background-repeat: no-repeat;
 }
+.content {
+  flex-grow: 1; /* Allow the content to grow and occupy the remaining space */
+  display: grid;
+  grid-template-columns: 1fr; /* Single column layout for the content */
+  gap: 20px; /* Add spacing between the Box components */
+}
 .icons-container {
   margin-bottom: 10px; /* Add margin to create spacing below the icons */
 }
@@ -44,6 +50,7 @@
 
    
   .sidebar {
+    flex-basis: 184px; 
     position: fixed;
     width: 184px;
     height: 100vh;
@@ -151,4 +158,35 @@ border: 0 solid #edf2f7;
   tab-size: 4;
 }
 
+.content {
+  padding-top: 100px;
+  padding-right: 1px;
+  padding-left: 85%;
+  flex-grow: 1;
+  width: 100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two-column layout for the content */
+  gap: 20px;}
 
+
+  .engage-content{
+    display: 'flex';
+   
+    padding-top: 10px;
+  padding-right: 300px;
+  padding-left: 300px;
+  padding-bottom: 200px;
+  
+}.engagement-post img {
+  width: 50%;
+  height: 50%;
+  margin-bottom: 10px;
+}
+.max-liked-post {
+  padding-left: -10px;
+  padding-top: 100px;
+  padding-bottom:100px;
+  height: fit-content;
+  padding-right: 100px;
+  
+}

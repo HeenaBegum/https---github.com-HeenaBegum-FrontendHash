@@ -1,4 +1,6 @@
-
+.datasection-container {
+  padding-top: 71px; /* Adjust the top padding to create space for the NavBar */
+}
 
 .profile-section {
   display: flex;
@@ -8,6 +10,7 @@
   margin-top: 20px;
   background-image: url('https://cms-ffxravi.blockstall.com/cover.jpg');
   background-repeat: repeat;
+  z-index: -10;
   /* Add any additional styling properties you want */
 }
 
@@ -98,7 +101,11 @@
   width: 30px; /* Adjust the width as needed */
   height: 30px; /* Adjust the height as needed */
 }
-
+.hashbio {
+  padding-left: 18px;
+  width: 30px; /* Adjust the width as needed */
+  height: 30px; /* Adjust the height as needed */
+}
 .sidebar-image {
   margin-top: -180px; /* Adjust the margin as needed */
   margin-bottom: 10px; /* Adjust the margin as needed */

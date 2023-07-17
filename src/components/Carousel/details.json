@@ -1,0 +1,32 @@
+{
+  "user": {
+    "name": "Samantha",
+    "main heading": "Willpower",
+    "carousel": {
+      "1": {
+        "caption": "Actor Samantha Ruth Prabhu on entrepreneurship and scaling her brand Saaki",
+        "image": "https://images.firstpost.com/wp-content/uploads/2022/07/Collage-Maker-08-Jul-2022-05.07-PM-min.jpg?impolicy=website&width=640&height=363",
+        "link": "https://www.firstpost.com/tag/samantha"
+      },
+      "2": {
+        "caption": "Actor Samantha Ruth Prabhu on entrepreneurship and scaling her brand Saaki",
+        "image": "https://images.firstpost.com/wp-content/uploads/2022/07/Collage-Maker-08-Jul-2022-05.07-PM-min.jpg?impolicy=website&width=640&height=363",
+        "link": "https://www.firstpost.com/tag/samantha"
+      },
+      "3": {
+        "caption": "Actor Samantha Ruth Prabhu on entrepreneurship and scaling her brand Saaki",
+        "image": "https://images.firstpost.com/wp-content/uploads/2022/07/Collage-Maker-08-Jul-2022-05.07-PM-min.jpg?impolicy=website&width=640&height=363",
+        "link": "https://www.firstpost.com/tag/samantha"
+      }
+      
+    },
+    "brands": {
+      "Mamaearth": {
+        "details": {}
+      },
+      "Myntra": {
+        "Details": "Saaki"
+      }
+    }
+  }
+}

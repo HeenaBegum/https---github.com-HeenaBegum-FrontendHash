@@ -1,39 +1,31 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
-import LogoutIcon from '@mui/icons-material/Logout';
-import Brightness6Icon from '@mui/icons-material/Brightness6';
+
 import HomeIcon from '@mui/icons-material/Home';
 import PersonIcon from '@mui/icons-material/Person';
 import MonetizationOnIcon from '@mui/icons-material/MonetizationOn';
 import LoyaltyIcon from '@mui/icons-material/Loyalty';
 import SettingsIcon from '@mui/icons-material/Settings';
-import logo from './logo.jpg';
+import NavBar from './NavBar';
 import EngagementIcon from '@mui/icons-material/ThumbUp';
 import TrackIcon from '@mui/icons-material/PlayArrow';
 import Hashtags from './Hashtags';
 import biancaAbbottWellnessImage from './biancaabbottwellness.jpg';
-import MiddleBox from './MiddleBox';
+import Box from '@mui/material/Box';
+import Paper from '@mui/material/Paper';
 import './styles.css';
+import Engagement from './Engagement';
 
 
   const Homepage = () => {
-    const [showAllHashtags, setShowAllHashtags] = useState(false);
+    
+   
+   
   
-    const handleToggleHashtags = () => {
-      setShowAllHashtags(!showAllHashtags);
-    };
+
   return (
     <div className="container">
-      <div className="nav-bar">
-        <div className="content-container">
-          <div></div>
-          <div className="icons-container">
-            
-            <LogoutIcon />
-            <Brightness6Icon />
-          </div>
-        </div>
-      </div>
+     <NavBar/>
 
       <div className="sidebar">
       <div className="sidebar-row">
@@ -62,7 +54,7 @@ import './styles.css';
         </div>
         <div className="sidebar-row">
           <TrackIcon />
-          <span>Settings</span>
+          <span>Track</span>
         </div>
         <div className="sidebar-row">
           <LoyaltyIcon />
@@ -81,23 +73,28 @@ import './styles.css';
       
 
       </div>
+   
 
-      <div className="logo-container" onClick={Homepage}>
-        <img src={logo} alt="Logo" className="logo" />
-      </div>
-
-
-      <div className="hashtags-container">
-        <Hashtags showAll={showAllHashtags} />
-        {!showAllHashtags && (
-          <button className="view-more-button" onClick={handleToggleHashtags}>
-            View More
-          </button>
-        )}
-      </div>
-
-      <MiddleBox />
+      <div className="content">
+      <Box>
+      <Paper elevation={3} >
+      <Hashtags/>  
+      </Paper>
       
+     
+    </Box>
+
+    </div>
+
+    <div className='engage-content'>
+   
+     
+      <Engagement/>  
+
+      
+     
+ 
+      </div>  
         
     </div>
   );
