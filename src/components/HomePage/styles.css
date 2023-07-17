@@ -1,0 +1,154 @@
+.container {
+  position: relative;
+  z-index: 101;
+  background-image: url('https://cms-ffxravi.blockstall.com/cover.jpg');
+  background-repeat: no-repeat;
+}
+.icons-container {
+  margin-bottom: 10px; /* Add margin to create spacing below the icons */
+}
+.nav-bar {
+    position: absolute;
+    width: 100%;
+    height: 121px;
+    left: 0;
+    top: -30px;
+    background: rgba(129, 251, 87, 0.29);
+    display: flex;
+    justify-content: flex-end; /* Align content to the right */
+    align-items: center; /* Vertically center the icons */
+    padding-right: 10px; /* Add some padding to create space between the icons and the right edge */
+    z-index: 100;/* Ensure the navbar is positioned above the sidebar */
+  }
+  
+  .nav-bar svg {
+    margin-left: 10px; /* Add some spacing between the icons */
+  }
+   
+  .logo-container {
+    display: flex;
+    align-items: center;
+    margin-right: 10px; /* Add margin to create spacing between the logo and other navbar content */
+    cursor: pointer;
+      position: absolute;transition: transform 0.3s;
+      top: 0.1;
+      left: 0;
+  }
+  
+  .logo {
+    width: 40px; /* Adjust the width as per your logo dimensions */
+    height: 40px; /* Adjust the height as per your logo dimensions */
+    object-fit: contain; /* Maintain aspect ratio of the logo */
+  }
+  
+
+   
+  .sidebar {
+    position: fixed;
+    width: 184px;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    background-color: #f5f5f5;
+    padding: 20px;
+    padding-top: 121px;
+    z-index: 99; /* Ensure the sidebar is positioned below the navbar */
+    margin-top: 121px; /* Add margin to push the sidebar below the navbar */
+  }
+  
+  .sidebar-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .sidebar-row span {
+    margin-left: 10px;
+  }
+  
+  .sidebar-row:hover {
+    background-color: rgba(129, 251, 87, 0.29);;
+  }
+  
+  .sidebar-row.active {
+    background-color: #c5e1a5;
+  }
+  
+  .sidebar-row.active:hover {
+    background-color: #a8c686;
+  }
+
+
+   
+ container > div:not(.nav-bar):not(.sidebar){
+  margin-left: 184px;
+  padding-top: 90px;}
+  .logo-container:hover {
+    transform: scale(1.1);
+  }
+  .sidebar-image-container {
+  position: relative;
+}
+  .sidebar-image {
+    margin-top: -180px; /* Adjust the margin as needed */
+    margin-bottom: 10px; /* Adjust the margin as needed */
+    text-align: center;
+  }
+  
+
+.sidebar-image img {
+  width: auto; /* Adjust the image size as needed */
+  height: auto;
+  border-radius: 50%;
+  /* Add any other image styles */
+}
+.sidebar-item {
+  background: transparent;
+}
+
+.link-item {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  overflow: hidden;
+  border: 1px solid rgb(217, 217, 217);
+  padding: 1px;
+  border-radius: 100px;
+}
+
+.item-icon {
+  height: 30px;
+  width: 30px;
+  border-radius: 100px;
+  object-fit: cover;
+}
+
+.item-text {
+  border: none;
+  padding-left:10px;
+}
+
+.hashtags-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 10px;
+  
+display: table-cell;
+padding-left: 0.5rem;
+padding-right: 0.5rem;
+padding-bottom: 1rem;
+border: 0 solid #edf2f7;
+  box-sizing: border-box;
+  font-family: Muli, sans-serif !important;
+  font-feature-settings: "tnum";
+  color: rgba(0, 0, 0, 0.85);
+  font-size: 14px;
+  font-variant: tabular-nums;
+  line-height: 1.5715;
+  tab-size: 4;
+}
+
+

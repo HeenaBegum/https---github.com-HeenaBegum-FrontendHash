@@ -1,0 +1,20 @@
+{
+  "followers": 10000,
+  "posts": [
+    {
+      "id": "post1",
+      "likes": 100,
+      "comments": 10
+    },
+    {
+      "id": "post2",
+      "likes": 200,
+      "comments": 20
+    },
+    {
+      "id": "post3",
+      "likes": 150,
+      "comments": 15
+    }
+  ]
+}
